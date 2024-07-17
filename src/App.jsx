@@ -53,7 +53,7 @@ function App() {
         <div className=" w-full flex items-center justify-between">
           <h1 className=" uppercase text-4xl font-bold text-white tracking-widest mb-4 md:text-3xl">
             {/* Task Manager */}
-            My Tasks
+            CRUD App
           </h1>
 
           {darkTheme ? (
@@ -88,9 +88,9 @@ function App() {
             } flex items-center justify-between text-gray-500 border-b`}
           >
             <p className=" text-gray-500 px-2 py-3">
-              {getRemainingTasks().length} tasks left{" "}
+              {getRemainingTasks().length} Tasks left{" "}
             </p>
-            <button onClick={clearTasks}>Clear all tasks</button>
+            <button onClick={clearTasks}>Delete all tasks</button>
           </div>
 
           {tasks.length ? (
@@ -102,7 +102,7 @@ function App() {
             />
           ) : (
             <div className=" w-full h-[80%] flex items-center justify-center overflow-hidden">
-              <p className=" text-gray-500 text-center z-10">Empty task</p>
+              <p className=" text-gray-500 text-center z-10">Delete task</p>
             </div>
           )}
         </div>

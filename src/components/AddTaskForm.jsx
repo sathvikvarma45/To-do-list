@@ -23,12 +23,12 @@ const AddTaskForm = ({ onAddTask, darkTheme }) => {
         <input
           className=" bg-transparent w-full h-fit p-1 py-4 text-lg"
           type="text"
-          placeholder="Add a new task..."
+          placeholder="Create a new task..."
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
         <button className=" px-4 uppercase text-gray-500" type="submit">
-          Add
+          Create
         </button>
       </div>
     </form>
